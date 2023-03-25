@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Luis's Portfolio</title>
+    <script src="https://unpkg.com/vue@2.6.14"></script>
+    <script src="https://unpkg.com/vue-router@3.5.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-DyZ88Kmr9C7iK8ZkJU6z1q6G2I6vdudU8rjU6r9XmLk//y7cE93BQ2jkwPC3RjFN1z7ROUeYGn/a6zm9tXWWog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    <div class = 'content' id="app">
+        <nav>
+            <router-link to="/">Home</router-link>
+            <router-link to="/projects">Projects</router-link>
+            <router-link to="/skills">Skills</router-link>
+            <router-link to="/contact">Contact</router-link>
+        </nav>
+
+        <router-view></router-view>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
